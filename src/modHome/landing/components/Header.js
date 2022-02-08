@@ -1,27 +1,77 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Modal from "../../../components/Modal";
-import Signup from "./Signup";
+import { MdLocationPin } from "react-icons/md";
+import { BsWhatsapp } from "react-icons/bs";
+import {
+  AiOutlineDown,
+  AiOutlineHeart,
+  AiOutlineMenu,
+  AiOutlineSearch,
+  AiOutlineShoppingCart,
+} from "react-icons/ai";
+
+import Signin from "./Signin";
+import NavbarTwo from "./NavbarTwo";
 
 const Header = () => {
   return (
-    <header className="">
-      <nav className="max-w-full px-2 sm:px-8">
-        <div className="flex justify-between">
-          <Link to="/" className="flex items-center py-2">
-            <img className="h-10" src="/images/logo.png" alt="logo" />
-          </Link>
+    <>
+      <nav className="max-w-full px-2 sm:px-8 py-1 bg-gray-200">
+        <div className="grid lg:grid-cols-12">
+          <div className="lg:col-span-4 flex items-center ">
+            <div className="hidden lg:flex gap-2 items-center ">
+              <MdLocationPin size={32} />
+              <h3>FIND A STORE | CUSTOMER CARE: 09678772828</h3>
+            </div>
+          </div>
+          <div className="grid lg:col-span-2 place-items-center border-gray-700 border-b-2 lg:border-b-0 relative ">
+            <Link to="/" className="flex justify-center pb-2 ">
+              <img className="h-10" src="/images/bata-logo.png" alt="logo" />
+            </Link>
+            <div className="absolute lg:hidden right-2">
+              <AiOutlineMenu size={32} />
+            </div>
+          </div>
 
-          <div className="flex items-center space-x-1">
-            <Modal
-              title="অ্যাকাউন্ট তৈরি করুন"
-              buttonLabel="সাইন আপ"
-              children={<Signup />}
-            />
+          <div className="lg:col-span-6">
+            <div className="flex items-center justify-center gap-x-5 text-lg py-2">
+              <div className="flex items-center gap-x-0">
+                <Modal
+                  title="Create Account"
+                  buttonLabel="SIGN IN"
+                  children={<Signin />}
+                />
+                <AiOutlineDown size="16" />
+              </div>
+              <div className=" ">
+                <AiOutlineHeart size={36} />
+              </div>
+              <div className="">
+                <BsWhatsapp size={30} />
+              </div>
+              <div className="">
+                <AiOutlineShoppingCart size={36} />
+              </div>
+              <div className=" hidden lg:flex border rounded overflow-hidden">
+                <input
+                  type="text"
+                  className="px-4 py-2"
+                  placeholder="Search..."
+                />
+                <button className="flex items-center justify-center px-4 border-l bg-white">
+                  <div className="h-4 w-4 text-gray-700  ">
+                    <AiOutlineSearch />
+                  </div>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
-    </header>
+
+      <NavbarTwo />
+    </>
   );
 };
 export default Header;

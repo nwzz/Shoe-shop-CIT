@@ -14,7 +14,7 @@ const Modal = ({ title, buttonLabel, children }) => {
 
   return (
     <>
-      <button type="button" onClick={openModal} className="w-24 btn-orange">
+      <button type="button" onClick={openModal} className=" ">
         {buttonLabel}
       </button>
 

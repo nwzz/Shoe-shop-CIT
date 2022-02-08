@@ -11,6 +11,9 @@
   box-sizing: border-box;
 }
 
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
 .sidebar-menu-heading {
   @apply flex items-center w-full h-10 px-3 mt-1 rounded;
 }
