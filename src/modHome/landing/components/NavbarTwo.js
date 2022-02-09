@@ -2,8 +2,8 @@ import React from "react";
 
 const NavbarTwo = () => {
   return (
-    <div className="bg-white h-16">
-      <div className="hidden lg:flex justify-center gap-10 capitalize items-center">
+    <div className="bg-gray-200 h-16 hidden lg:block ">
+      <div className="flex justify-center gap-10 capitalize items-center">
         <div>
           <h3 className="text-sm font-semibold lg:py-5">MEN</h3>
         </div>

@@ -35,7 +35,7 @@ const settings = {
   slidesToScroll: 1,
   autoplay: true,
   speed: 2000,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 10000,
   cssEase: "linear",
 };
 
@@ -60,11 +60,11 @@ const Banner = () => {
             <img
               src={item.banner}
               alt={item.name}
-              className="w-full h-72 lg:h-100"
+              className="md:w-full md:h-full"
             />
-            <div className="h-full absolute top-0 left-0 px-7 flex items-center">
+            {/* <div className="absolute bottom-4 left-3 ">
               <div>
-                <h2 className="font-bold text-5xl text-white w-80">
+                <h2 className="font-bold md:text-5xl text-white ">
                   {item.name}
                 </h2>
                 <p className="text-white my-5">
@@ -77,7 +77,7 @@ const Banner = () => {
                   SHOPPING NOW
                 </button>
               </div>
-            </div>
+            </div> */}
           </div>
         ))}
       </Slider>

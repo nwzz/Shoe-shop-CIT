@@ -17,7 +17,7 @@ import NavbarTwo from "./NavbarTwo";
 const Header = () => {
   return (
     <>
-      <nav className="max-w-full px-2 sm:px-8 py-1 bg-gray-200">
+      <nav className="max-w-full px-2 sm:px-8 py-1 bg-gray-100">
         <div className="grid lg:grid-cols-12">
           <div className="lg:col-span-4 flex items-center ">
             <div className="hidden lg:flex gap-2 items-center ">
@@ -50,9 +50,15 @@ const Header = () => {
               <div className="">
                 <BsWhatsapp size={30} />
               </div>
-              <div className="">
+              {/* <div className="">
                 <AiOutlineShoppingCart size={36} />
-              </div>
+              </div> */}
+              <button className="relative px-1 py-1 border-2 border-black  rounded-full text-sm delay-100 hover:bg-black hover:text-white md:px-1.5 md:py-1.5">
+                <AiOutlineShoppingCart size={20} />
+                <span className="absolute -top-2 -right-4  bg-red-500 text-white font-medium rounded-full px-2.5 py-1">
+                  2
+                </span>
+              </button>
               <div className=" hidden lg:flex border rounded overflow-hidden">
                 <input
                   type="text"
