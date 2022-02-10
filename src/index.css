@@ -92,3 +92,6 @@
 .list-footer {
   @apply bg-gray-300 text-primary rounded-b-md p-3 mt-2;
 }
+.layout-padding {
+  @apply py-5 px-5 md:px-5 lg:px-10 xl:px-16 2xl:px-24;
+}

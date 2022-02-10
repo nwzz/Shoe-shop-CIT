@@ -3,16 +3,13 @@ import Header from "./Header";
 
 const Layout = ({ children }) => {
   return (
-    <div className=" h-screen w-screen grid grid-cols-1 grid-rows-layout max-w-screen-2xl xl:max-w-screen-3xl mx-auto">
+    <div className="h-screen w-screen grid grid-cols-1 grid-rows-layout mx-auto 3xl:max-w-7xl">
       <Header />
-      <div className="grid overflow-hidden grid-cols-1">
+      <div className="grid grid-cols-1 overflow-hidden">
         <div className="overflow-y-auto">
-          <section className="h-full">
-            <div className="max-w-full px-2 sm:px-8 h-full">{children}</div>
-          </section>
+          <div className="grid grid-cols-1">{children}</div>
         </div>
       </div>
-      {/* <Footer /> */}
     </div>
   );
 };

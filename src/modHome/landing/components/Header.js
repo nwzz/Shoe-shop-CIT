@@ -75,8 +75,6 @@ const Header = () => {
           </div>
         </div>
       </nav>
-
-      <NavbarTwo />
     </>
   );
 };
