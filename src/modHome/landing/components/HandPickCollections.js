@@ -29,8 +29,8 @@ const HandPickCollections = () => {
   return (
     <div className="mt-20 mb-10">
       <div className="mb-10">
-        <h3 className="text-2xl font-mono font-bold text-center">
-          Just Landed
+        <h3 className="text-2xl font-mono font-bold uppercase text-center">
+          Our Hand Picked Collections for You
         </h3>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-7  place-items-center  mt-10 ">
@@ -44,7 +44,7 @@ const HandPickCollections = () => {
                   className="transition delay-150 duration-300  group-hover:scale-110 hover:opacity-75"
                 />
                 <div className="absolute p-3 left-8 right-8  bottom-25 bg-gray-50 ">
-                  <h3 className="text-2xl text-center font-medium font-mono ">
+                  <h3 className="text-xl text-center font-semibold font-mono ">
                     {item.name}
                   </h3>
                 </div>

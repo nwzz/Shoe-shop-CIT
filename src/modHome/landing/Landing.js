@@ -1,13 +1,15 @@
 import React from "react";
 import Layout from "./components/Layout";
 import Banner from "./components/Banner";
-import ProductList from "./components/ProductList";
+//import ProductList from "./components/ProductList";
 import ProductCategory from "./components/ProductCategory";
-import JustLandedProducts from "./components/JustLandedProducts";
+//import JustLandedProducts from "./components/JustLandedProducts";
 import Footer from "./components/Footer";
 import NavbarTwo from "./components/NavbarTwo";
 import SwipeToSlide from "./components/SwipeToSlide";
 import HandPickCollections from "./components/HandPickCollections";
+import FavouritePick from "./components/FavouritePick";
+import Partner from "./components/Partner";
 
 export default function Landing() {
   return (
@@ -21,6 +23,8 @@ export default function Landing() {
           <SwipeToSlide />
           {/* <ProductList /> */}
           <HandPickCollections />
+          <FavouritePick />
+          {/* <Partner /> */}
         </div>
 
         <Footer />
