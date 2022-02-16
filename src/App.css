@@ -1,6 +1,6 @@
 .slick-prev:before,
 .slick-next:before {
-  color: tomato !important;
+  color: black !important;
 }
 .slick-prev:before {
   position: absolute;
@@ -17,4 +17,7 @@
   .slick-next:before {
     right: 8px;
   }
+}
+#menu-toggle:checked + #menu {
+  display: block;
 }

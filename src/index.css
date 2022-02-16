@@ -95,3 +95,14 @@
 .layout-padding {
   @apply py-5 px-5 md:px-5 lg:px-10 xl:px-16 2xl:px-24;
 }
+.head-liner {
+  @apply before:absolute before:top-1/2 before:w-24 before:h-0.5 before:bg-black  after:absolute after:top-1/2 after:w-28 after:h-0.5 after:bg-gray-700;
+}
+
+/*navbar */
+.nav-item {
+  @apply py-2 mx-2 relative flex items-center uppercase font-medium leading-tight;
+}
+.sub-nav {
+  @apply px-0 py-16 w-0 h-0 absolute mt-1 -left-5 rounded-md hidden group-hover:block group-hover:w-navmenu group-hover:h-72 group-hover:bg-white;
+}

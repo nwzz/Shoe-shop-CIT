@@ -27,7 +27,7 @@ const data = [
 const ProductCategory = () => {
   return (
     <>
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 place-items-center overflow-hidden mt-10">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 place-items-center overflow-hidden mt-10 pb-10">
         {data.map((item, index) => (
           <div key={index} className=" border-gray-200 relative group ">
             <Link to={`/products/${item.category}`}>
@@ -39,9 +39,6 @@ const ProductCategory = () => {
             </Link>
           </div>
         ))}
-      </div>
-      <div className=" mt-10">
-        <img className="h-10/12" src="/images/category/voucer.jpg" alt="" />
       </div>
     </>
   );

@@ -10,6 +10,9 @@ module.exports = {
       gridTemplateColumns: {
         layout: "240px 1fr",
       },
+      width: {
+        navmenu: "36rem",
+      },
       colors: {
         primary: "#273238",
         secondary: "#eaedf7",

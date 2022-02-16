@@ -12,7 +12,6 @@ import {
 } from "react-icons/ai";
 
 import Signin from "./Signin";
-import NavbarTwo from "./NavbarTwo";
 
 const Header = () => {
   return (
@@ -22,7 +21,9 @@ const Header = () => {
           <div className="lg:col-span-4 flex items-center ">
             <div className="hidden lg:flex gap-2 items-center ">
               <MdLocationPin size={32} />
-              <h3>FIND A STORE | CUSTOMER CARE: 09678772828</h3>
+              <h3 className="text-sm">
+                FIND A STORE | CUSTOMER CARE: 09678772828
+              </h3>
             </div>
           </div>
           <div className="grid lg:col-span-2 place-items-center border-gray-700 border-b-2 lg:border-b-0 relative ">
@@ -44,16 +45,16 @@ const Header = () => {
                 />
                 <AiOutlineDown size="16" />
               </div>
-              <div className=" ">
-                <AiOutlineHeart size={36} />
-              </div>
-              <div className="">
-                <BsWhatsapp size={30} />
-              </div>
+              <button className=" px-1 py-1 border-2 border-black  rounded-full text-sm delay-100 hover:bg-black hover:text-red-600 md:px-1.5 md:py-1.5">
+                <AiOutlineHeart size={20} />
+              </button>
+              <button className=" px-1 py-1 border-2 border-black  rounded-full text-sm delay-100 hover:bg-black hover:text-green-600 md:px-1.5 md:py-1.5">
+                <BsWhatsapp size={20} />
+              </button>
               {/* <div className="">
                 <AiOutlineShoppingCart size={36} />
               </div> */}
-              <button className="relative px-1 py-1 border-2 border-black  rounded-full text-sm delay-100 hover:bg-black hover:text-white md:px-1.5 md:py-1.5">
+              <button className="relative px-1 py-1 border-2 border-black  rounded-full text-sm delay-100 hover:bg-black hover:text-gray-100 md:px-1.5 md:py-1.5">
                 <AiOutlineShoppingCart size={20} />
                 <span className="absolute -top-2 -right-4  bg-red-500 text-white font-medium rounded-full px-2.5 py-1">
                   2

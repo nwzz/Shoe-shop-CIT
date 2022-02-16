@@ -1,5 +1,5 @@
 {
-  "name": "sobhisab-home",
+  "name": "shoes shop",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -26,6 +26,7 @@
     "react-to-print": "^2.14.3",
     "react-toastify": "^8.1.0",
     "slick-carousel": "^1.8.1",
+    "swiper": "^8.0.6",
     "use-persisted-state": "^0.3.3",
     "web-vitals": "^1.1.2",
     "yup": "^0.32.11"
