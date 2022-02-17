@@ -182,19 +182,141 @@ const navbarData = [
     ],
   },
   {
-    title: "Dining",
-    to: "/product-category/dining",
+    title: "Children",
+    to: "/product-category/bed-room",
+    children: [
+      {
+        title: "Boys",
+        to: "/product-category/bed-room/bed-room-furniture",
+        children: [
+          {
+            title: "Boys Sandals",
+            to: "/product-category/bed-room/bed-room-furniture/bed-room-set",
+          },
+          {
+            title: "Boys Heels",
+            to: "/product-category/bed-room/bed-room-furniture/beds-headboards",
+          },
+          {
+            title: "Boys Sports Shoes",
+            to: "/product-category/bed-room/bed-room-furniture/kids",
+          },
+          {
+            title: "Boys Casual",
+            to: "/product-category/bed-room/bed-room-furniture/kids",
+          },
+          {
+            title: "Boys Shoes",
+            to: "/product-category/bed-room/bed-room-furniture/kids",
+          },
+        ],
+      },
+      {
+        title: "Girls",
+        to: "/product-category/bed-room/bed-room-furniture",
+        children: [
+          {
+            title: "Girls Sandals",
+            to: "/product-category/bed-room/bed-room-furniture/bed-room-set",
+          },
+          {
+            title: "Girls Heels",
+            to: "/product-category/bed-room/bed-room-furniture/beds-headboards",
+          },
+          {
+            title: "Girls Sports Shoes",
+            to: "/product-category/bed-room/bed-room-furniture/kids",
+          },
+          {
+            title: "Girls Casual",
+            to: "/product-category/bed-room/bed-room-furniture/kids",
+          },
+          {
+            title: "Girls Shoes",
+            to: "/product-category/bed-room/bed-room-furniture/kids",
+          },
+        ],
+      },
+      {
+        title: "Brand",
+        to: "/product-category/living/storage",
+        children: [
+          {
+            title: "Bata",
+            to: "/product-category/living/storage/bar-cabinet",
+          },
+          {
+            title: "Bata Comfit",
+            to: "/product-category/living/storage/bar-shoee",
+          },
+          {
+            title: "Hush Pupies",
+            to: "/product-category/living/storage/bar-shoee",
+          },
+          {
+            title: "North Star",
+            to: "/product-category/living/storage/bar-shoee",
+          },
+          {
+            title: "Power",
+            to: "/product-category/living/storage/bar-shoee",
+          },
+          {
+            title: "Weinbrenner",
+            to: "/product-category/living/storage/bar-shoee",
+          },
+        ],
+      },
+    ],
   },
   {
-    title: "Deals",
+    title: "Accessories",
+    to: "/product-category/dining",
+    children: [
+      {
+        title: "Bags",
+        to: "/product-category/bed-room/bed-room-furniture",
+        children: [
+          {
+            title: "Ladies Bags",
+            to: "/product-category/bed-room/bed-room-furniture/bed-room-set",
+          },
+          {
+            title: "Backpack",
+            to: "/product-category/bed-room/bed-room-furniture/kids",
+          },
+        ],
+      },
+      {
+        title: "Others",
+        to: "/product-category/bed-room/bed-room-furniture",
+        children: [
+          {
+            title: "Belts",
+            to: "/product-category/bed-room/bed-room-furniture/bed-room-set",
+          },
+          {
+            title: "Wallets",
+            to: "/product-category/bed-room/bed-room-furniture/kids",
+          },
+          {
+            title: "Shoe Shiner",
+            to: "/product-category/bed-room/bed-room-furniture/kids",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "School Shoes",
     to: "/product-category/deails",
   },
   {
-    title: "NEW ARRIVALS",
+    title: "Blog",
     to: "/product-category/new-arrivals",
   },
   {
-    title: "NEW ARRIVALS",
+    title: "E-Voucher",
     to: "/product-category/new-arrivals",
   },
 ];
