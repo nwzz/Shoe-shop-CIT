@@ -17,6 +17,12 @@ const data = [
   {
     name: "North Star",
     banner:
+      "https://cdn.shopify.com/s/files/1/2287/9679/files/mens-sports-web-banner.jpg?v=1636951095",
+    price: 50,
+  },
+  {
+    name: "North Star",
+    banner:
       "https://cdn.shopify.com/s/files/1/2287/9679/files/MC-web-banner.jpg?v=1634127036",
     price: 45,
   },

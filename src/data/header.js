@@ -2,53 +2,87 @@ import { FiDatabase, FiSmile, FiTruck } from "react-icons/fi";
 
 const navbarData = [
   {
-    title: "Living Room",
+    title: "Men",
     to: "/product-category/living",
     children: [
       {
-        title: "SOFA COLLECTION",
+        title: "Shoes",
         to: "/product-category/living/sofa-collection",
         children: [
           {
-            title: "SOFA SETS",
+            title: "Casual Shoes",
             to: "/product-category/living/sofa-collection/sofa-sets",
           },
           {
-            title: "CORNER SOFA",
+            title: "Formal Shoes",
             to: "/product-category/living/sofa-collection/corner-sofa",
           },
           {
-            title: "CHAIRS",
+            title: "Sports",
+            to: "/product-category/living/sofa-collection/chairs",
+          },
+          {
+            title: "Men's Sandal",
             to: "/product-category/living/sofa-collection/chairs",
           },
         ],
       },
       {
-        title: "STORAGE",
+        title: "Brand",
         to: "/product-category/living/storage",
         children: [
           {
-            title: "BAR-CABINET",
+            title: "Bata",
             to: "/product-category/living/storage/bar-cabinet",
           },
           {
-            title: "SHOEE-CABINET",
+            title: "Bata Comfit",
+            to: "/product-category/living/storage/bar-shoee",
+          },
+          {
+            title: "Hush Pupies",
+            to: "/product-category/living/storage/bar-shoee",
+          },
+          {
+            title: "North Star",
+            to: "/product-category/living/storage/bar-shoee",
+          },
+          {
+            title: "Power",
+            to: "/product-category/living/storage/bar-shoee",
+          },
+          {
+            title: "Weinbrenner",
             to: "/product-category/living/storage/bar-shoee",
           },
         ],
       },
       {
-        title: "OTHERS",
+        title: "By Price",
         to: "#",
         children: [
-          { title: "TV UNITS", to: "/product-category/living/others/tv-units" },
-          { title: "BEAN BAG", to: "/product-category/living/others/bean-bag" },
           {
-            title: "COFFEE TABLES",
+            title: "Under 1000",
+            to: "/product-category/living/others/tv-units",
+          },
+          {
+            title: "TK.10000 - 20000",
+            to: "/product-category/living/others/bean-bag",
+          },
+          {
+            title: "TK.20000 - 30000",
             to: "/product-category/living/others/coffee-tables",
           },
           {
-            title: "OFFICE & STUDY",
+            title: "TK.30000 - 40000",
+            to: "/product-category/living/others/office-study",
+          },
+          {
+            title: "TK.40000 - 50000",
+            to: "/product-category/living/others/office-study",
+          },
+          {
+            title: "Upper then 50000",
             to: "/product-category/living/others/office-study",
           },
         ],
@@ -56,34 +90,92 @@ const navbarData = [
     ],
   },
   {
-    title: "Bed Room",
+    title: "Women",
     to: "/product-category/bed-room",
     children: [
       {
-        title: "BEDROOM FURNITURE",
+        title: "Shoes",
         to: "/product-category/bed-room/bed-room-furniture",
         children: [
           {
-            title: "BEDROOM SET",
+            title: "Ladies Sandals",
             to: "/product-category/bed-room/bed-room-furniture/bed-room-set",
           },
           {
-            title: "BEDS & HEADBOARDS",
+            title: "Ladies Heels",
             to: "/product-category/bed-room/bed-room-furniture/beds-headboards",
           },
           {
-            title: "KIDS",
+            title: "Ladies Sports Shoes",
+            to: "/product-category/bed-room/bed-room-furniture/kids",
+          },
+          {
+            title: "Ladies Casual",
+            to: "/product-category/bed-room/bed-room-furniture/kids",
+          },
+          {
+            title: "Formal Shoes",
             to: "/product-category/bed-room/bed-room-furniture/kids",
           },
         ],
       },
       {
-        title: "STORAGE",
-        to: "/product-category/bed-room/storage",
+        title: "Brand",
+        to: "/product-category/living/storage",
         children: [
           {
-            title: "WARDROBES",
-            to: "/product-category/bed-room/storage/wardrobes",
+            title: "Bata",
+            to: "/product-category/living/storage/bar-cabinet",
+          },
+          {
+            title: "Bata Comfit",
+            to: "/product-category/living/storage/bar-shoee",
+          },
+          {
+            title: "Hush Pupies",
+            to: "/product-category/living/storage/bar-shoee",
+          },
+          {
+            title: "North Star",
+            to: "/product-category/living/storage/bar-shoee",
+          },
+          {
+            title: "Power",
+            to: "/product-category/living/storage/bar-shoee",
+          },
+          {
+            title: "Weinbrenner",
+            to: "/product-category/living/storage/bar-shoee",
+          },
+        ],
+      },
+      {
+        title: "By Price",
+        to: "#",
+        children: [
+          {
+            title: "Under 1000",
+            to: "/product-category/living/others/tv-units",
+          },
+          {
+            title: "TK.10000 - 20000",
+            to: "/product-category/living/others/bean-bag",
+          },
+          {
+            title: "TK.20000 - 30000",
+            to: "/product-category/living/others/coffee-tables",
+          },
+          {
+            title: "TK.30000 - 40000",
+            to: "/product-category/living/others/office-study",
+          },
+          {
+            title: "TK.40000 - 50000",
+            to: "/product-category/living/others/office-study",
+          },
+          {
+            title: "Upper then 50000",
+            to: "/product-category/living/others/office-study",
           },
         ],
       },
@@ -96,6 +188,10 @@ const navbarData = [
   {
     title: "Deals",
     to: "/product-category/deails",
+  },
+  {
+    title: "NEW ARRIVALS",
+    to: "/product-category/new-arrivals",
   },
   {
     title: "NEW ARRIVALS",

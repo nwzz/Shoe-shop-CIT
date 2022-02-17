@@ -10,8 +10,8 @@ const DesktopNavbar = () => {
         {navbarData.map((item, index) => (
           <div key={index}>
             {!item.children ? (
-              <li className="py-1 relative group">
-                <Link className="nav-item" to={item.to}>
+              <li className="py-1 relative group uppercase  bg-green-400">
+                <Link className="nav-item font-extrabold" to={item.to}>
                   {item.title}
                 </Link>
               </li>
