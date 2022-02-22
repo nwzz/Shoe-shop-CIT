@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import SignIn from "../../components/layout/Header/user/SignIn";
 import Layout from "./components/Layout";
-import Signin from "./components/Signin";
+
 
 export default function NotFound() {
   return (
@@ -19,7 +20,7 @@ export default function NotFound() {
             </div>
 
             <div className="pt-10 sm:mt-6">
-              <Signin />
+              <SignIn/>
               <div className="flex items-center justify-center mt-2">
                 <Link
                   to="/forgot-password"

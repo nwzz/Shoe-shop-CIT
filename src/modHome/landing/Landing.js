@@ -11,9 +11,10 @@ import HandPickCollections from "./components/HandPickCollections";
 import FavouritePick from "./components/FavouritePick";
 import FeaturedProducts from "./components/FeaturedProducts";
 import Partner from "./components/Partner";
-import DesktopNavbar from "../../components/layout/header/desktopNavbar/DesktopNavbar";
+
 import Voucher from "./components/Voucher";
 import BestSeller from "./components/BestSeller";
+import DesktopNavbar from "../../components/layout/Header/desktopNavabar/DesktopNavbar";
 //import NavbarThree from "./components/NavbarThree";
 
 export default function Landing() {
@@ -22,7 +23,7 @@ export default function Landing() {
       <Layout>
         {/* <NavbarTwo /> */}
         {/* <NavbarThree /> */}
-        <DesktopNavbar />
+        <DesktopNavbar/>
         <Banner />
         <div className="layout-padding">
           <ProductCategory />
