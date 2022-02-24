@@ -5,21 +5,21 @@ import { useForm } from "react-hook-form";
 import { FaSignInAlt } from "react-icons/fa";
 import PrimaryButton from "../../../button/PrimaryButton";
 import Input from "../../../Input";
-import ToggleMode from "./ToggleMode";
+// import ToggleMode from "./ToggleMode";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useGlobalContext } from "../../../../hooks/context";
 import { usePostData } from "../../../../hooks/dataApi";
 import toast from "react-hot-toast";
 
-const schema = yup.object().shape({
-  email: yup
-    .string()
-    .email("Please enter a valid email address.")
-    .required("Email is required"),
-  password: yup.string().required("Password is required").min(8).max(16),
-});
+// const schema = yup.object().shape({
+//   email: yup
+//     .string()
+//     .email("Please enter a valid email address.")
+//     .required("Email is required"),
+//   password: yup.string().required("Password is required").min(8).max(16),
+// });
 
-const SignIn = ({ setToggle }) => {
+const SignIn = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const value = useGlobalContext();
@@ -35,7 +35,7 @@ const SignIn = ({ setToggle }) => {
     formState: { errors },
   } = useForm({
     defaultValues: { email: "admin@gmail.com", password: "12345678" },
-    resolver: yupResolver(schema),
+    // resolver: yupResolver(schema),
   });
 
   const { email, password } = errors;
@@ -53,14 +53,13 @@ const SignIn = ({ setToggle }) => {
         navigate.push(from);
       }
     } catch (error) {
-      // if (error.response) {
-      //   toast.error("Response : " + error.response.data.message);
-      // } else if (error.request) {
-      //   toast.error("Request : " + error.message);
-      // } else {
-      //   toast.error("Error :", error.message);
-      // }
-      setSubmitting(false);
+      if (error.response) {
+        toast.error("Response : " + error.response.data.message);
+      } else if (error.request) {
+        toast.error("Request : " + error.message);
+      } else {
+        toast.error("Error :", error.message);
+      }
     } finally {
       setSubmitting(false);
     }
@@ -95,7 +94,7 @@ const SignIn = ({ setToggle }) => {
         </div>
       </form>
 
-      {setToggle && (
+      {/* {setToggle && (
         <ToggleMode
           toogleArray={[
             { label: "CREATE ACCOUNT", value: "signup" },
@@ -103,7 +102,7 @@ const SignIn = ({ setToggle }) => {
           ]}
           setToggle={setToggle}
         />
-      )}
+      )} */}
     </div>
   );
 };
@@ -111,44 +110,3 @@ const SignIn = ({ setToggle }) => {
 export default SignIn;
 
 
-// import React from 'react'
-// import { useForm } from 'react-hook-form';
-// import { FaSignInAlt } from 'react-icons/fa';
-// import PrimaryButton from '../../../button/PrimaryButton';
-// import Input from '../../../Input';
-
-// const SignIn = () => {
-//   const {
-//     register,
-//   } = useForm();
-//   return (
-//     <div>
-//       <h3 className="font-medium text-md uppercase text-gray-800">Login</h3>
-//       <form className="my-7">
-//         <div className="form-col">
-//           <Input
-//             name="email"
-//             type="email"
-//             placeholder="Email address*"
-//             register={register}
-            
-//           />
-//           <Input
-//             name="password"
-//             type="password"
-//             placeholder="Password*"
-//             register={register}
-//           />
-//           <PrimaryButton
-//             btnText="LOGIN"
-//             Icon={FaSignInAlt}
-//             type="submit"
-//             btnWidth="w-32"
-//           />
-//         </div>
-//       </form>
-//     </div>
-//   );
-// }
-
-// export default SignIn

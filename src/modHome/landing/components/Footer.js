@@ -3,31 +3,31 @@ import { Link } from "react-router-dom";
 
 const shop = [
   {
-    title: "Sofa Sets",
+    title: "Bata",
     to: "/product-category/living/sofa-collection/sofa-sets",
   },
   {
-    title: "Corner Sofa",
+    title: "Power",
     to: "/product-category/living/sofa-collection/corner-sofa",
   },
   {
-    title: "Chairs",
+    title: "Hush Pupies",
     to: "/product-category/living/sofa-collection/chairs",
   },
   {
-    title: "Bed Room Set",
+    title: "Bata Comfit",
     to: "/product-category/bed-room/bed-room-furniture/bed-room-set",
   },
   {
-    title: "Dinning",
+    title: "Marie Claire",
     to: "/product-category/dining",
   },
   {
-    title: "Deails",
+    title: "North Star",
     to: "/product-category/deails",
   },
   {
-    title: "Bed Headboard",
+    title: "Weibbener",
     to: "/product-category/bed-room/bed-room-furniture/beds-headboards",
   },
   {
@@ -35,7 +35,7 @@ const shop = [
     to: "/product-category/new-arrivals",
   },
   {
-    title: "Tv Units",
+    title: "Best Seller",
     to: "/product-category/living/others/tv-units",
   },
 ];
@@ -55,14 +55,14 @@ const Footer = () => {
               href="mailto:webstore@royalgroup.ae"
               className="my-2 block font-medium hover:underline md:text-sm lg:text-lg"
             >
-              webstore@royalgroup.ae
+              webstore@batabd.com
             </a>
             <a href="tel:+8801777203618" className="my-2 block font-medium">
-              0800 76925
+              +88 01823-0769255
             </a>
             <p>
-              Royal Furniture,
-              <br /> New Industrial Area, Ajman
+              Bata Store
+              <br /> Tongi Industrial Area, Gazipur
             </p>
           </div>
           <div className="md:col-span-2 md:pt-2">

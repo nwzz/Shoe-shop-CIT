@@ -182,7 +182,7 @@ const navbarData = [
     ],
   },
   {
-    title: "Children",
+    title: "Kids",
     to: "/product-category/bed-room",
     children: [
       {

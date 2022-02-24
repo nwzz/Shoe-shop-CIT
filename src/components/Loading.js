@@ -1,4 +1,5 @@
 import React from "react";
+import { FaExclamationCircle } from "react-icons/fa";
 import { BarLoader, HashLoader } from "react-spinners";
 
 export const FallbackLoading = () => {
@@ -33,3 +34,11 @@ export const HashLoadingSmall = () => {
     </div>
   );
 };
+
+export function Error({ message }) {
+  return (
+    <div className="flex items-center justify-center text-3xl text-red-500 h-full">
+      <FaExclamationCircle size={36} />! {message} !
+    </div>
+  );
+}

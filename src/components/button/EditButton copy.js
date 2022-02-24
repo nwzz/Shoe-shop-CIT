@@ -1,11 +1,11 @@
 import React from "react";
 import { FiEdit } from "react-icons/fi";
-import { useHistory } from "react-router";
+import { useNavigate } from "react-router";
 
 const EditButton = ({ path }) => {
-  const history = useHistory();
+  const navigate = useNavigate();
   return (
-    <button className="btn-edit" onClick={() => history.push(path)}>
+    <button className="btn-edit" onClick={() => navigate.push(path)}>
       <FiEdit size={16} />
     </button>
   );

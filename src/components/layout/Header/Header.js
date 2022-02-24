@@ -11,7 +11,7 @@ import {
   AiOutlineShoppingCart,
 } from "react-icons/ai";
 
-import SignIn from "./user/SignIn";
+import SignIn2 from "./user/SignIn2";
 
 const Header = () => {
   return (
@@ -41,7 +41,7 @@ const Header = () => {
                 <Modal
                   title="Create Account"
                   buttonLabel="SIGN IN"
-                  children={<SignIn/>}
+                  children={<SignIn2/>}
                 />
                 <AiOutlineDown size="16" />
               </div>

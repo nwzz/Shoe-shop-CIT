@@ -1,7 +1,10 @@
 import React from "react";
 import Slider from "react-slick";
-import { products } from "../../../data/products";
+import { Error, HashLoading } from "../../../components/Loading";
+import justLanded from "../../../data/justLanded";
+import { useGetData } from "../../../hooks/dataApi";
 import ProductCard from "./ProductCard";
+
 
 const settings = {
   className: "center",
@@ -31,16 +34,29 @@ const settings = {
   ],
 };
 
-const FeaturedProducts = () => {
+
+
+const JustLanded = () => {
+  const {
+    data: list,
+    isLoading,
+    isError,
+    error,
+  } = useGetData("products", "/justlanded-list");
+
+  if (isLoading) return <HashLoading/>;
+
+  if (isError) return <Error message={error.message} />;
+
   return (
     <div className="mt-10 mb-10 border-gray-200 border-b pb-5">
-      <div className="mb-10 relative head-liner before:left-80 after:right-80">
+      <div className="mb-10 relative head-liner before:left-80 after:right-80 ">
         <h3 className="text-2xl font-mono font-bold uppercase text-center">
-          Featured Products
+          Just Landed
         </h3>
       </div>
       <Slider {...settings}>
-        {products.map((item, index) => (
+        {list.data.map((item, index) => (
           <ProductCard item={item} />
         ))}
       </Slider>
@@ -48,4 +64,4 @@ const FeaturedProducts = () => {
   );
 };
 
-export default FeaturedProducts;
+export default JustLanded;

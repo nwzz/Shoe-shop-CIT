@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const ProductCard = ({ item }) => {
   return (
-    <div className="relative p-5 transform duration-300  cursor-pointer  hover:shadow-md group border-gray-300 rounded-md group hover:border lg:h-96">
+    <div className="relative p-5 transform duration-300  cursor-pointer  hover:shadow-md group border-gray-300 rounded-md group hover:border lg:h-96 xl:h-full">
       <div className="absolute top-4 z-10 right-4 hidden group-hover:block ">
         <AiOutlineHeart size={24} />
       </div>

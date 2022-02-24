@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { IoSearchSharp } from "react-icons/io5";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Modal from "../../../Modal";
 
 const Search = () => {
-  const history = useHistory();
+  const navigate = useNavigate();
   const [open, setOpen] = useState(false);
 
   const { register, handleSubmit } = useForm();
@@ -13,9 +13,9 @@ const Search = () => {
   const onSubmit = async (data) => {
     const keyword = data.name;
     if (keyword) {
-      history.push(`/search/${keyword}`);
+      navigate.push(`/search/${keyword}`);
     } else {
-      history.push("/");
+      navigate.push("/");
     }
   };
 
