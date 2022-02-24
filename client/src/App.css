@@ -1,0 +1,23 @@
+.slick-prev:before,
+.slick-next:before {
+  color: black !important;
+}
+.slick-prev:before {
+  position: absolute;
+  left: -3px;
+}
+.slick-next:before {
+  position: absolute;
+  right: -3px;
+}
+@media screen and (max-width: 1023px) {
+  .slick-prev:before {
+    left: 8px;
+  }
+  .slick-next:before {
+    right: 8px;
+  }
+}
+#menu-toggle:checked + #menu {
+  display: block;
+}
