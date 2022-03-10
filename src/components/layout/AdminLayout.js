@@ -11,7 +11,7 @@ const AdminLayout = ({ children }) => {
           <Sidebar />
         </div>
         <div className="grid grid-rows-layout h-screen overflow-hidden bg-light text-dark">
-          <Header/>
+          {/* <Header/> */}
           <div className="overflow-y-auto">
             <div className="grid grid-cols-1 p-4">{children}</div>
           </div>

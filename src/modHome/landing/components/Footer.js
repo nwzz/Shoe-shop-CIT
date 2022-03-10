@@ -58,7 +58,7 @@ const Footer = () => {
               webstore@batabd.com
             </a>
             <a href="tel:+8801777203618" className="my-2 block font-medium">
-              +88 01823-0769255
+              +88 013-07692
             </a>
             <p>
               Bata Store

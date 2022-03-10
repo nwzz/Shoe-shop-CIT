@@ -37,16 +37,16 @@ const settings = {
 
 
 const JustLanded = () => {
-  const {
-    data: list,
-    isLoading,
-    isError,
-    error,
-  } = useGetData("products", "/justlanded-list");
+  // const {
+  //   data: list,
+  //   isLoading,
+  //   isError,
+  //   error,
+  // } = useGetData("products", "/justlanded-list");
 
-  if (isLoading) return <HashLoading/>;
+  // if (isLoading) return <HashLoading/>;
 
-  if (isError) return <Error message={error.message} />;
+  // if (isError) return <Error message={error.message} />;
 
   return (
     <div className="mt-10 mb-10 border-gray-200 border-b pb-5">
@@ -56,7 +56,8 @@ const JustLanded = () => {
         </h3>
       </div>
       <Slider {...settings}>
-        {list.data.map((item, index) => (
+        {/* {list.data.map((item, index) => ( */}
+        {justLanded.map((item, index) => (
           <ProductCard item={item} />
         ))}
       </Slider>

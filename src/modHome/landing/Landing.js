@@ -28,7 +28,7 @@ export default function Landing() {
         <div className="layout-padding">
          
           <ProductCategory />
-          {/* <JustLanded /> */}
+          <JustLanded />
           <Voucher />
           <BestSeller />
           <HandPickCollections />

@@ -12,6 +12,7 @@ import {
 } from "react-icons/ai";
 
 import SignIn2 from "./user/SignIn2";
+import MobileNavbar from "./mobileNavbar";
 
 const Header = () => {
   return (
@@ -30,9 +31,10 @@ const Header = () => {
             <Link to="/" className="flex justify-center pb-2 ">
               <img className="h-10" src="/images/bata-logo.png" alt="logo" />
             </Link>
-            <div className="absolute lg:hidden right-2">
-              <AiOutlineMenu size={32} />
-            </div>
+            <button className="absolute lg:hidden right-2 ">
+              {/* <AiOutlineMenu size={32} /> */}
+              <MobileNavbar/>
+            </button>
           </div>
 
           <div className="lg:col-span-6">
